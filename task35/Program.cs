@@ -10,12 +10,11 @@ int[] FillArray(int size)
     int[] arr = new int[size];
     for(int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(0,100);
+        arr[i] = new Random().Next(-200,201);
     }
     return arr;
 }
 
-//Console.Write("Введите длину массива: ");
 int[] array = FillArray(123);
 Console.WriteLine(string.Join(", ", array));
 int count = 0;
