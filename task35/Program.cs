@@ -16,7 +16,9 @@ int[] FillArray(int size)
 }
 
 int[] array = FillArray(123);
-Console.WriteLine(string.Join(", ", array));
+Console.Write("[");
+Console.Write(string.Join(", ", array));
+Console.WriteLine("]");
 int count = 0;
 for(int i = 0; i < array.Length; i++)
 {
