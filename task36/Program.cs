@@ -18,7 +18,9 @@ int[] FillArray(int size)
 Console.Write("Введите длину массива: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int[] array = FillArray(num);
-Console.WriteLine(string.Join(", ", array));
+Console.Write("[");
+Console.Write(string.Join(", ", array));
+Console.WriteLine("]");
 int otvet = 0;
 for(int i = 0; i < array.Length; i++)
 {
